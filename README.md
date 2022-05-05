@@ -20,20 +20,32 @@ To interact and test the deployed smart contract, I will complete the following 
 1. Use the `setAccounts` function to define the authorized Ethereum address that will be able to withdraw funds from your contract.
     Addresses Used:
     > account1 address: 0x0c0669Cd5e60a6F4b8ce437E4a4A007093D368Cb
+    
     > account2 address: 0x7A1f3dFAa0a4a19844B606CD6e91d693083B12c0
-    >```
+
 ![Set Accounts](Images/Set_Accounts.png)
+
 2. Test the deposit functionality of the smart contract by sending the following amounts of ether. After each transaction, use the `contractBalance` function to verify that the funds were added to your contract:
+    
     * Transaction 1: Send 1 ether as wei.
+    
 ![Deposit 1 Wei](Images/Deposit_1wei.png)
+    
     * Transaction 2: Send 10 ether as wei.
+    
 ![Deposit 10 Wei](Images/Deposit_10wei.png)
+    
     * Transaction 3: Send 5 ether.
+    
 ![Deposit 5 ether](Images/Deposit_5ether.png)
 
 3. With a successfully deposit of funds into the smart contract, test the contract’s withdrawal functionality by withdrawing 5 ether into `accountOne` and 10 ether into `accountTwo`. After each transaction, use the `contractBalance` function to verify that the funds were withdrawn from your contract. Also, use the `lastToWithdraw` and `lastWithdrawAmount` functions to verify that the address and amount were correct.
+    
     * Withdrawal 1: 5 ether into accountOne.
+    
 ![Withdrawal 5 ether](Images/Withdrawal_5ether.png)
+    
     * Withdrawal 2: 10 ether into accountTwo.
+    
 ![Withdrawal 10 ether](Images/Withdrawal_10ether.png)
 ---
